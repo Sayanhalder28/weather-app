@@ -1,0 +1,16 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "it,s a web app that will use weather api to show weather of any location",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sayan halder",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "bootstrap": "^5.2.0",
+    "express": "^4.18.1"
+  }
+}

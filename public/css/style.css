@@ -1,0 +1,43 @@
+
+.video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content{
+  margin-top: 17%;
+  width: 100%;
+  position: fixed;
+}
+
+.innerContent{
+  width : 70%;
+  margin: auto;
+}
+
+.label{
+  font-size: 20px;
+  color: white;
+}
+.input{
+  border-radius: 40px 40px 40px 40px;
+}
+
+#button{
+  border-radius: 40px 40px 40px 40px;
+}
+
+#head{
+  color: white;
+  font-size: 50px;
+  width: 90%;
+  margin: auto;
+}
+
+.form{
+  width: 90%;
+  margin: auto;
+}
