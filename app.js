@@ -4,6 +4,7 @@ const https = require("https");
 
 const app = express();
 app.use(body.urlencoded({extended: true}));
+app.set('view engine', 'ejs');
 
 app.use(express.static("public"));
 app.get("/", function(req, res) {
@@ -27,9 +28,7 @@ function temperature(location,res){
     response.on("data", function(data) {
       const weatherData = JSON.parse(data);
       const temp = weatherData.main.temp;
-      res.write("<h1>weather description</h1>");
-      res.write("<h2>Temperature at "+ location +" is :- " + temp + " C</h2>");
-      res.send();
+      res.render('temp',{cityName : location,temp : temp});
     });
   });
 };
